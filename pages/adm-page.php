@@ -250,7 +250,7 @@ if (isset($_SESSION['upload_message'])) {
         
         if (filenames.length > 0) {
             const queryString = filenames.map(filename => 'files[]=' + encodeURIComponent(filename)).join('&');
-            window.location.href = 'download.php?' + queryString;
+            window.location.href = 'download.php?' + queryString + '&category=' + encodeURIComponent(selectedClass);
         }
     });
 

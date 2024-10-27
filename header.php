@@ -98,6 +98,8 @@
             }
         }
     </style>
+
+    
 </head>
 
 <header class="fixed top-0 left-0 right-0  z-10">
@@ -110,18 +112,18 @@
                     <li><a href="?page=home" class="text-primary hover:text-white">HOME</a></li>
                     <li><a href="?page=downloads" class="text-primary hover:text-white">DOWNLOADS</a></li>
                     <li><a href="?page=enviar-arquivos" class="text-primary hover:text-white">ENVIAR ARQUIVOS</a></li>
-                    <li class="relative group">
-                        <a href="#" class="text-primary hover:text-white">SEGUNDO</a>
-                        <div class="absolute left-0 mt-2 w-48 bg-secondary rounded-md shadow-lg hidden group-hover:block">
+                    <li class="relative">
+                        <a href="#" class="text-primary hover:text-white" onclick="toggleDropdown('segundo-dropdown'); return false;">SEGUNDO ▼</a>
+                        <div id="segundo-dropdown" class="absolute left-0 mt-2 w-48 bg-secondary rounded-md shadow-lg hidden">
                             <a href="?page=class-page&year=segundo&class=2-51" class="block px-4 py-2 text-sm text-primary hover:bg-accent">2-51</a>
                             <a href="?page=class-page&year=segundo&class=2-52" class="block px-4 py-2 text-sm text-primary hover:bg-accent">2-52</a>
                             <a href="?page=class-page&year=segundo&class=2-53" class="block px-4 py-2 text-sm text-primary hover:bg-accent">2-53</a>
                             <a href="?page=class-page&year=segundo&class=2-54" class="block px-4 py-2 text-sm text-primary hover:bg-accent">2-54</a>
                         </div>
                     </li>
-                    <li class="relative group">
-                        <a href="#" class="text-primary hover:text-white">TERCEIRAO</a>
-                        <div class="absolute left-0 mt-2 w-48 bg-secondary rounded-md shadow-lg hidden group-hover:block">
+                    <li class="relative">
+                        <a href="#" class="text-primary hover:text-white" onclick="toggleDropdown('terceirao-dropdown'); return false;">TERCEIRAO ▼</a>
+                        <div id="terceirao-dropdown" class="absolute left-0 mt-2 w-48 bg-secondary rounded-md shadow-lg hidden">
                             <a href="?page=class-page&year=terceirao&class=3-51" class="block px-4 py-2 text-sm text-primary hover:bg-accent">3-51</a>
                             <a href="?page=class-page&year=terceirao&class=3-52" class="block px-4 py-2 text-sm text-primary hover:bg-accent">3-52</a>
                             <a href="?page=class-page&year=terceirao&class=3-53" class="block px-4 py-2 text-sm text-primary hover:bg-accent">3-53</a>
@@ -132,4 +134,6 @@
             </nav>
         </div>
     </div>
+
+    <script src="js/scripts.js"></script>
 </header>
